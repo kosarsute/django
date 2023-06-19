@@ -18,8 +18,12 @@ class Employees(models.Model):
     role = models.CharField(max_length=100)
     shift = models.IntegerField()
 
+class Menu(models.Model):
+    name = models.CharField(max_length=200)
+    price = models.IntegerField()
 
-def __str__(self) -> str:
-    return self.first_name
+    def __str__(self):
+        return self.name
+
 
 
